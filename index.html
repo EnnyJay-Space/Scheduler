@@ -2,44 +2,114 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scheduler</title>
-    <link rel="stylesheet" href="bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scheduler</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+  <link rel="stylesheet" href="style.css">
 </head>
-https://github.com/EnnyJay-Space/Scheduler.git
+
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg " id="navbar">
-        <div class="container">
-          <a class="navbar-brand text-light" href="#">Scheduler</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-light">
-              <li class="nav-item ">
-                <a class="nav-link active" aria-current="page" href="">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="">Stores</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link " href="">Categories</a>
-              </li>
-              
-            </ul>
-          </div>
-          
+  <!-- Navbar -->
+  <!-- <nav class="navbar navbar-expand-lg " id="navbar">
+    <div class="container">
+      <a class="navbar-brand text-light" href="#">Scheduler</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse text-center" id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-light">
+          <li class="nav-item ">
+            <a class="nav-link active" aria-current="page" href="">Tasks</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " aria-current="page" href="">Completed Task</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link " href="">Add Task</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav> -->
+  <main class="app">
+    <section class="greeting">
+      <h2 class="title">
+        What's up, <input type="text" id="name" placeholder="name here">
+      </h2>
+    </section>
+    <section class="create-todo">
+      <h3>CREATE A TODO</h3>
+      <form id="new-todo-form" action="">
+        <h4>What's on your todo list</h4>
+        <input 
+          type="text" 
+          name="content" 
+          id="content" 
+          placeholder="e.g, make a video">
+        <h4>Pick a category</h4>
+        <div class="options">
+          <label>
+            <input 
+              type="radio" 
+              name="category" 
+              id="category1" 
+              value="business">
+            <span class="bubble business"></span>
+            <div>Business</div>
+          </label>
+          <label>
+            <input 
+              type="radio" 
+              name="category" 
+              id="category2" 
+              value="personal">
+            <span class="bubble personal"></span>
+            <div>Personal</div>
+          </label>
         </div>
-      </nav>
-    
+        <input type="submit" value="Add Todo">
+      </form>
+    </section>
+
+    <section class="todo-list">
+      <h3>TODO LIST</h3>
+      <div class="list" id="todo-list">
+        <!-- <div class="todo-item done">
+          <label>
+            <input type="checkbox" name="" id="">
+            <span class="bubble business"></span>
+          </label>
+          <div class="todo-content">
+            <input type="text" name="" id="" value="Make a video" readonly>
+          </div>
+          <div class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button> 
+          </div>
+        </div>
+
+        <div class="todo-item">
+          <label>
+            <input type="checkbox" name="" id="">
+            <span class="bubble personal"></span>
+          </label>
+          <div class="todo-content">
+            <input type="text" name="" id="" value="Get milk" readonly>
+          </div>
+          <div class="actions">
+            <button class="edit">Edit</button>
+            <button class="delete">Delete</button> 
+          </div>
+        </div> -->
+      </div>
+    </section>
+
+
+  </main>
 
 
 
@@ -59,7 +129,8 @@ https://github.com/EnnyJay-Space/Scheduler.git
 
 
 
-    <script src="/script.js"></script>
+
+  <script src="/script.js"></script>
 </body>
 
 </html>
