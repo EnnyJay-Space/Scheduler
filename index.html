@@ -6,16 +6,25 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Scheduler</title>
+
+  <!-- Loading Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="bootstrap.min.css"> -->
+
+  <!-- Loading Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap.min.css">
+
+  <!-- Loading CSS -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- Loading Icons -->
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
   <!-- Navbar -->
-  <!-- <nav class="navbar navbar-expand-lg " id="navbar">
+  <nav class="navbar navbar-expand-lg sticky-top" id="navbar">
     <div class="container">
-      <a class="navbar-brand text-light" href="#">Scheduler</a>
+      <a class="navbar-brand text-light fw-bold" href="#">Scheduler</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -28,13 +37,10 @@
           <li class="nav-item">
             <a class="nav-link " aria-current="page" href="">Completed Task</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link " href="">Add Task</a>
-          </li>
         </ul>
       </div>
     </div>
-  </nav> -->
+  </nav>
   <main class="app">
     <section class="greeting">
       <h2 class="title">
@@ -45,28 +51,16 @@
       <h3>CREATE A TODO</h3>
       <form id="new-todo-form" action="">
         <h4>What's on your todo list</h4>
-        <input 
-          type="text" 
-          name="content" 
-          id="content" 
-          placeholder="e.g, make a video">
+        <input type="text" name="content" id="content" placeholder="e.g, make a video">
         <h4>Pick a category</h4>
         <div class="options">
           <label>
-            <input 
-              type="radio" 
-              name="category" 
-              id="category1" 
-              value="business">
+            <input type="radio" name="category" id="category1" value="business">
             <span class="bubble business"></span>
             <div>Business</div>
           </label>
           <label>
-            <input 
-              type="radio" 
-              name="category" 
-              id="category2" 
-              value="personal">
+            <input type="radio" name="category" id="category2" value="personal">
             <span class="bubble personal"></span>
             <div>Personal</div>
           </label>
@@ -84,15 +78,16 @@
             <span class="bubble business"></span>
           </label>
           <div class="todo-content">
-            <input type="text" name="" id="" value="Make a video" readonly>
+            <input class="text-wrap" type="text" name="" id="" value="Make a video" readonly>
           </div>
           <div class="actions">
-            <button class="edit">Edit</button>
-            <button class="delete">Delete</button> 
+            <button class="edit"><i class='bx bxs-edit-alt'></i></button>
+            <button class="delete"><i class='bx bxs-trash'></i></button>
           </div>
         </div>
 
         <div class="todo-item">
+
           <label>
             <input type="checkbox" name="" id="">
             <span class="bubble personal"></span>
@@ -100,37 +95,20 @@
           <div class="todo-content">
             <input type="text" name="" id="" value="Get milk" readonly>
           </div>
+
           <div class="actions">
             <button class="edit">Edit</button>
-            <button class="delete">Delete</button> 
+            <button class="delete">Delete</button>
           </div>
+
+
+
+
         </div> -->
       </div>
     </section>
-
-
   </main>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <script src="/script.js"></script>
+  <script src="script.js"></script>
 </body>
 
 </html>
